@@ -1,0 +1,337 @@
+body{
+    font-family : 'Montserrat' , sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    width: 550px;
+    border-radius: 1rem;
+    background-color: black;
+}
+.main-content{
+    flex : 1;
+    border-radius: 1rem;
+    overflow: auto;
+    background-color: #121212;
+    margin-left: 1rem;
+}
+.music-player{
+    position: fixed;
+    bottom: 0;
+    width: 99.62%;
+    height: 10rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 4.5rem;
+    opacity: 0.7;
+    padding: 0rem 0.85rem ;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size : 2rem;
+    padding-right: 2rem;
+}
+.nav-option a{
+    font-size: 2rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-options img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.lib-options{
+    padding: 1.2rem;
+    font-size: 2.5rem;
+    opacity: 0.7;
+}
+.lib-options:hover{
+    opacity: 1;
+}
+.options .icons i{
+    font-size: 2.1rem;
+    padding: 1.1rem;
+    opacity: 0.7;
+}
+.options .icons i:hover{
+    opacity: 1;
+}
+.box{
+    height:max-content;
+    margin-top: 3.3rem;
+    border-radius: 1rem;
+    background-color: #242323;
+}
+.box-p1{
+    padding: 2.5rem 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.box-p2{
+    padding: 0rem 2rem;
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+.badge{
+    margin: 4rem 2rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    border-radius: 70px;
+    padding: 0.5rem 2rem;
+    width: max-content;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out 0s;
+}
+.badge:hover{
+    transform: scale(1.1);
+}
+.main-content .sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+.main-content .sticky-nav img{
+    border: 3px solid black;
+    background-color: black;
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+#backimg{
+    opacity: 0.5;
+    margin: 4rem 1rem 0rem 2.4rem;
+}
+#forimg{
+    opacity: 0.5;
+}
+#backimg:hover,#forimg:hover{
+    opacity: 1;
+}
+#Explore{
+    position: absolute;
+    top: 3rem;
+    margin: 0rem 1rem 3rem 45rem;
+}
+#Install{
+    position: absolute;
+    top: 3rem;
+    margin: 0rem 0.7rem 3rem 65rem;
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+}
+#Notification{
+    position: absolute;
+    top: 3rem;
+    margin: 0rem 0.7rem 3rem 82rem;
+}
+#Id{
+    position: absolute;
+    top: 3rem;
+    margin: 0rem 0.7rem 3rem 90rem;
+}
+@media(max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+h2{
+    font-size: 2.7rem;
+    margin: 2rem 2rem -0.5rem 2rem;
+}
+.card-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+.cards-container{
+    width: 20rem;
+    height: 33rem;
+    padding: 2rem 2rem 0.2rem 2rem;
+    margin: 2rem;
+}
+.cards-container:hover{
+    background-color: #1a1919;
+    border-radius: 1.1rem;
+    
+}
+.cards-container img{
+    margin-bottom: 1rem;
+}
+.card-title{
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: 0.95;
+}
+.card-info{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    opacity: 0.6;
+}
+.playbar{
+    position: relative;
+    top: -8rem;
+    left: 12rem;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+.cards-container:hover .playbar{
+    display: block;
+}
+.cards-container:hover .card-title{
+    position: relative;
+    top: -6.25rem;
+}
+.cards-container:hover .card-info{
+    position: relative;
+    top: -6.25rem;
+}
+.mt{
+    margin-top: -8rem;
+    margin-bottom: -1rem;
+    font-weight: 700;
+}
+.footer{
+    margin-top: -10rem;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    height: 90%;
+    width: 80%;
+    border-top: 4px solid rgb(153, 146, 146);
+    opacity: 0.2;
+}
+.left img{
+    height: 8rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+.left .card-title{
+    position: relative;
+    top: -8.7rem;
+    left: 11rem;
+    font-weight: lighter;
+}
+.left .card-info{
+    top: -7.8rem;
+}
+.left .like{
+    top: -12rem;
+    left: 32rem;
+    margin-left: -1rem;
+    opacity: 0.6;
+}
+.left .like2{
+    margin-left: 2rem;
+}
+.music-player .right{
+    border: 1px solid rgb(0, 0, 0);
+}
+.shuffle{
+    height: 2.4rem;
+    position: relative;
+    top: 1.4rem;
+    left: 26rem;
+    opacity: 0.4;
+    margin-left: 5rem;
+}
+.center .like2{
+    margin-left: -5rem;
+}
+.back,.forward{
+    height: 3rem;
+    opacity: 0.8;
+}
+.play{
+    height: 4rem;
+    opacity: 1;
+    top: 2rem;
+}
+.center .song{
+    width: 60rem;
+    height: 0.5rem;
+    border-radius: 7rem;
+    position: relative;
+    top: 2rem;
+    left: 10rem;
+    background-color: rgb(96, 90, 90);
+    opacity: 0.8;
+}
+.start{
+    font-size: 1.5rem;
+    position: relative;
+    top: 3rem;
+    left: 6rem;
+    margin: 0;
+    opacity: 0.6;
+}
+.end{
+    top: 0.8rem;
+    left: 71rem;
+}
+.like:hover,.shuffle:hover{
+    transform: scale(1.15);
+    opacity: 1;
+}
+.right{
+    margin: 0;
+    display: flex;
+    font-size: 2.5rem;
+    align-items: center;
+}
+.full,.volume,.connection,.queue,.lyrics,.playbox{
+    opacity: 0.5;
+    padding: 1rem;
+}
+.full:hover,.volume:hover,.connection:hover,.queue:hover,.lyrics:hover,.playbox:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+#vol-range{
+    display: none;
+}
+.volume:hover #vol-range{
+    display: inline;
+}

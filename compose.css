@@ -1,0 +1,113 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  height: min-content;
+  width:100%;
+  background:url("./photos/photo.jpg");
+  background-size:cover ;
+}
+.btn_one{
+  color: white;
+  position: absolute;
+  left: 50px;
+  top: 40px;
+  font-weight: 300;
+  font-size: 100px;
+  transition: all 2s ease-in-out 0s;
+}
+.sidebar_menu{
+  height:0;
+  width: 35rem;
+  margin: 0.2rem 0.2rem 0rem 0.2rem;
+  padding: 1rem 0rem 1rem 1rem;
+  position: absolute;
+  left: -900px;
+  background-color: rgba(236, 236, 236, 0.1);
+  box-shadow: 0 0 6px rgba(255,255,255,0.5);
+  transition: all 2s ease-in-out 0s;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+div>div.logo{
+  position: relative;
+  font-size: 80px;
+  font-weight: 500;
+  left: 0px;
+  color: rgb(216, 4, 4);
+}
+.menu{
+  position:relative;
+  left:-23px;
+  width: 35.8rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: white;
+}
+.sidebar_menu .social_media i{
+  position: relative;
+  top: -6rem;
+  left: 5rem;
+  padding-right: 1rem;
+  font-size: 2rem;
+  opacity: 0.3;
+}
+.btn_two{
+  position: relative;
+  top: -4.75rem;
+  left: 30rem;
+  width: max-content;
+  font-size: 100px;
+  cursor: pointer;
+  opacity: 0.2;
+}
+#check{
+  display: none;
+}
+.item a{
+  border: 2px solid white;
+  font-size: 20px;   
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+.icon{
+  padding-right: 12px;
+  font-size: 30px;
+  padding-top: 20px;
+} 
+#check:checked~.btn_one{
+  opacity: 0;
+}
+#check:checked~.sidebar_menu{
+  left: 0;
+  height: 51rem;
+}
+.btn_two:hover{
+  opacity: 1;
+  color: rgb(157, 160, 162);
+}
+.sidebar_menu .social_media i:hover{
+transform: scale(1.2);
+opacity: 1;
+}
+.menu>ul>li{
+  border: 1px solid rgba(48, 45, 45, 0.1);
+  position: relative;
+  top: -5rem;
+  left: -0.1rem;
+  width: 94.8%;
+  padding: 1.7rem 1rem;
+}
+.menu>ul>li:hover{
+  border: 1px solid rgba(255, 255, 255, 0.218);
+}
+.menu>ul{
+  padding: 0;
+}
